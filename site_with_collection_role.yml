@@ -1,0 +1,7 @@
+---
+- name: Playbook with colection role
+  hosts: all
+  tasks:
+    - name: Run single task role from collection
+      import_role:
+        name: zakamaldin.yandex_cloud_elk.create_file_with_content

@@ -1,0 +1,8 @@
+---
+- name: Test my_ansible_module
+  hosts: localhost
+  tasks:
+    - name: Run module
+      my_ansible_module: 
+        path: "/tmp/dir1/dir2/created.txt"
+        content: "hello netology from inner directory"
